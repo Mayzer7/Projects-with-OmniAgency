@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="omni-logo.svg">
+    <title>Проекты с OmniAgency</title>
+    <style>
+
+      @font-face {
+        font-family: 'Graphik LC Web';
+        font-display: swap;
+        src: url('template/fonts/graphiklcweb_medium.ttf');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'Inter';
+        src: url('fonts/Inter-Medium.otf');
+        font-weight: 600;
+        font-style: normal;
+    }
+
+     @font-face {
+        font-family: 'Futura New Light';
+        src: url('fonts/FuturaNewLight.otf');
+        font-weight: 900;
+        font-style: normal;
+    }
+
+      body {
+        background-color: #ffe457;
+        color: black;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        min-width: 340px;
+      }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: clamp(18px, 5vw, 40px);
+            transition: all 0.3s ease;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+        }
+
+        .container h1 {
+            font-size: clamp(32px, 8vw, 70px);
+            font-weight: 300;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+    
+        }
+
+        .container h1 a {
+            background-color: black;
+            color: #fff;
+            display: inline-flex; 
+            align-items: center;
+            gap: 10px;
+            padding: 4px;
+            font-size: clamp(32px, 8vw, 40px);
+        }
+
+        .container h1 a img {
+            background-color: black; 
+            width: 40px;
+            height: 28px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .links a {
+            position: relative;
+            display: inline-block;
+        }
+
+        .links a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 2px; 
+            background-color: black;
+            
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .links a:hover::after {
+            transform: scaleX(1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>
+                Проекты с 
+                <a href="https://omniagency.ru/" target="_blank">
+                    <img src="omni-logo.svg" alt="">
+                    OMNI
+                </a>
+            </h1>
+
+            <div class="links">
+                <div class="link">
+                    <a href="https://omniagencyproject.ru/" target="_blank">
+                        1. Дизайн клуб
+                    </a>
+                </div>
+                
+                <div class="link">
+                    <a href="https://omniagencyproject.ru/tentberi/" target="_blank">
+                        2. ТентБери
+                    </a>
+                </div>
+                
+                <div class="link">
+                    <a href="https://omniagencyproject.ru/pulssar/" target="_blank">
+                        3. Pulssar
+                    </a>
+                </div>
+
+                <div class="link">
+                    <a href="https://omniagencyproject.ru/pakgauzi/" target="_blank">
+                        4. Пакгаузы
+                    </a>
+                </div>
+
+                <div class="link">
+                    <a href="https://omniagencyproject.ru/evolution-cms/" target="_blank">
+                        5. Evolution CMS
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
