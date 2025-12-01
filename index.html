@@ -4,117 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="omni-logo.svg">
+    <link rel="stylesheet" href="style.css">
     <title>Проекты с OmniAgency</title>
-    <style>
-
-      @font-face {
-        font-family: 'Graphik LC Web';
-        font-display: swap;
-        src: url('template/fonts/graphiklcweb_medium.ttf');
-        font-weight: normal;
-        font-style: normal;
-      }
-
-      @font-face {
-        font-family: 'Inter';
-        src: url('fonts/Inter-Medium.otf');
-        font-weight: 600;
-        font-style: normal;
-    }
-
-     @font-face {
-        font-family: 'Futura New Light';
-        src: url('fonts/FuturaNewLight.otf');
-        font-weight: 900;
-        font-style: normal;
-    }
-
-      body {
-        background-color: #ffe457;
-        color: black;
-        font-family: 'Inter', sans-serif;
-        font-weight: 600;
-        min-width: 340px;
-      }
-
-        a {
-            text-decoration: none;
-            color: black;
-            font-size: clamp(18px, 5vw, 40px);
-            transition: all 0.3s ease;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: left;
-        }
-
-        .container h1 {
-            font-size: clamp(32px, 8vw, 70px);
-            font-weight: 300;
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-    
-        }
-
-        .container h1 a {
-            background-color: black;
-            color: #fff;
-            display: inline-flex; 
-            align-items: center;
-            gap: 10px;
-            padding: 4px;
-            font-size: clamp(32px, 8vw, 40px);
-        }
-
-        .container h1 a img {
-            background-color: black; 
-            width: 40px;
-            height: 28px;
-        }
-
-        .links {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .links a {
-            position: relative;
-            display: inline-block;
-        }
-
-        .links a::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -2px;
-            width: 100%;
-            height: 2px; 
-            background-color: black;
-            
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.3s ease;
-        }
-
-        .links a:hover::after {
-            transform: scaleX(1);
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block; 
-        }
-
-    </style>
 </head>
 <body>
     <div class="container">
@@ -122,52 +13,71 @@
             <h1>
                 Проекты с 
                 <a href="https://omniagency.ru/" target="_blank">
-                    <img src="omni-logo.svg" alt="">
+                    <svg width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.72254 0.522949H6.90233V2.70272H4.72254V0.522949ZM4.72254 4.64166V6.81987H2.54434V11.1794H4.72254V13.1172V15.2967H6.90233V13.1172H17.5599V15.2962H13.4426V17.4759H17.5599V15.2967H19.7398V11.1794H21.9179V6.81987H19.7398H19.7387V4.64166H17.5615V2.70351H15.3818V4.64166H9.0805V2.70351H6.90076V4.64166H4.72254ZM17.5599 8.99804V6.82145H15.3784V8.99804H17.5599ZM9.08128 6.82145V8.99804H6.90233V6.82145H9.08128ZM2.54354 8.99804H0.36377V15.2952H2.54354V8.99804ZM11.0207 17.4759V15.2962H6.9033V17.4759H11.0207ZM19.7398 0.522949H17.5599V2.70272H19.7398V0.522949ZM24.1009 8.99804H21.9211V15.2952H24.1009V8.99804Z" fill="currentColor"/>
+                    </svg>
+
                     OMNI
                 </a>
             </h1>
 
-            <div class="links">
-                <div class="link">
-                    <a href="https://omniagencyproject.ru/design-club/" target="_blank">
-                        1. Дизайн клуб
-                    </a>
-                </div>
+            <div class="middle-content">
+                <div class="links">
+                    <div class="link">
+                        <a href="https://omniagencyproject.ru/design-club/" target="_blank">
+                            1. Дизайн клуб
+                        </a>
+                    </div>
+                    
+                    <div class="link">
+                        <a href="https://omniagencyproject.ru/tentberi/" target="_blank">
+                            2. ТентБери
+                        </a>
+                    </div>
+
+                    <div class="link">
+                        <a href="https://omniagencyproject.ru/ferrumformat/" target="_blank">
+                            3. FerrumFormat
+                        </a>
+                    </div>
+
+                    <div class="link">
+                        <a href="https://omniagencyproject.ru/pakgauzi/" target="_blank">
+                            4. Пакгаузы
+                        </a>
+                    </div> 
                 
-                <div class="link">
-                    <a href="https://omniagencyproject.ru/tentberi/" target="_blank">
-                        2. ТентБери
-                    </a>
+                    <div class="link">
+                        <a href="https://omniagencyproject.ru/pulssar/" target="_blank">
+                            5. Pulssar
+                        </a>
+                    </div>
+
+                    <div class="link">
+                        <a href="https://omniagencyproject.ru/evolution-cms/" target="_blank">
+                            6. Evolution CMS
+                        </a>
+                    </div>
+
+                    <div class="link">
+                        <a href="https://omniagencyproject.ru/commercial-offer/" target="_blank">
+                            7. Коммерческое предложение
+                        </a>
+                    </div>
                 </div>
 
-		<div class="link">
-                    <a href="https://omniagencyproject.ru/ferrumformat/" target="_blank">
-                        3. FerrumFormat
-                    </a>
-                </div>
+                <div class="my-info">
+                    <img src="tolya-frontend-dev.png" alt="">
 
-		<div class="link">
-                    <a href="https://omniagencyproject.ru/pakgauzi/" target="_blank">
-                        4. Пакгаузы
-                    </a>
-                </div> 
-               
-                <div class="link">
-                    <a href="https://omniagencyproject.ru/pulssar/" target="_blank">
-                        5. Pulssar
-                    </a>
-                </div>
+                    <div class="my-info-desc">
+                        <h2 class="my-name">
+                            Толя
+                        </h2>
 
-                <div class="link">
-                    <a href="https://omniagencyproject.ru/evolution-cms/" target="_blank">
-                        6. Evolution CMS
-                    </a>
-                </div>
-
-                <div class="link">
-                    <a href="https://omniagencyproject.ru/commercial-offer/" target="_blank">
-                        7. Коммерческое предложение
-                    </a>
+                        <h3 class="my-role">
+                            Frontend Dev
+                        </h3>
+                    </div>
                 </div>
             </div>
         </div>
