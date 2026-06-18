@@ -243,10 +243,15 @@ img {
     color: transparent;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 715px) {
     .links {
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .links {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
