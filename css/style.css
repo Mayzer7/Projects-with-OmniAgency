@@ -76,6 +76,11 @@ a {
     transition: all 0.3s ease;
 }
 
+/* .content {
+    width: 100%;
+    max-width: 1400px;   
+} */
+
 .container {
     display: flex;
     flex-direction: column;
@@ -145,7 +150,6 @@ a {
 .project-card {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
     border: 2px solid black;
     border-radius: 16px;
     overflow: hidden;
