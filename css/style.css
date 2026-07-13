@@ -287,6 +287,93 @@ img {
     color: transparent;
 }
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 1600px;
+    padding: clamp(20px, 4vw, 32px) 20px;
+    margin-top: auto;
+    border-top: 2px solid black;
+}
+
+.footer-credit {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: clamp(14px, 2.4vw, 18px);
+    font-weight: 600;
+
+    background: linear-gradient(90deg, #151c28 0%, #1f2a40 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.footer-credit-name {
+    font-weight: 700;
+}
+
+.footer-credit-dot {
+    color: black;
+    opacity: 0.35;
+}
+
+.footer-credit-link {
+    font-size: inherit;
+    font-weight: 700;
+    color: black;
+    padding: 2px 12px;
+    border: 2px solid black;
+    border-radius: 999px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.footer-credit-link:hover {
+    background-color: black;
+    color: #ffe457;
+}
+
+.footer-socials {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: clamp(15px, 2vw, 18px);
+    font-weight: 600;
+    padding: 6px 18px;
+    border: 2px solid black;
+    border-radius: 999px;
+    transition: all 0.3s ease;
+}
+
+.footer-link svg {
+    width: 20px;
+    height: 20px;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    background-color: black;
+    color: #ffe457;
+}
+
+.footer-link:hover svg {
+    color: #ffe457;
+}
+
 @media (max-width: 1350px) {
     .links {
         grid-template-columns: repeat(2, 1fr);
@@ -305,7 +392,12 @@ img {
     }
 
     .content {
-        padding: 0px 8px 16px 8px;
+        padding: 0px 8px 30px 8px;
+    }
+
+    .footer {
+        padding-left: 8px;
+        padding-right: 8px;
     }
 }
 
