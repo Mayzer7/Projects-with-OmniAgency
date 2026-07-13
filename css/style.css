@@ -48,7 +48,7 @@ p {
 
 @font-face {
     font-family: 'Inter';
-    src: url('fonts/Inter-Medium.otf');
+    src: url('../fonts/Inter-Medium.otf');
     font-weight: 600;
     font-style: normal;
 }
@@ -76,10 +76,11 @@ a {
     transition: all 0.3s ease;
 }
 
-/* .content {
+.content {
     width: 100%;
-    max-width: 1400px;   
-} */
+    max-width: 1600px;   
+    padding: 0px 20px 50px 20px;
+}
 
 .container {
     display: flex;
@@ -110,6 +111,11 @@ a {
     align-items: center;
     flex-wrap: wrap;
     gap: 12px;
+
+    background: linear-gradient(90deg, #151c28 0%, #1f2a40 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .container h1 a {
@@ -143,7 +149,7 @@ a {
 
 .links {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -247,17 +253,28 @@ img {
     color: transparent;
 }
 
+@media (max-width: 1350px) {
+    .links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 715px) {
     .links {
         gap: 12px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .links {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .content {
+        padding: 0px 8px 16px 8px;
     }
 }
+
 
 
 
